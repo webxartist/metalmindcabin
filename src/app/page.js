@@ -1,5 +1,6 @@
-import ContactSection from "@/Components/ContactSection";
+// import ContactSection from "@/Components/ContactSection";
 
+import AboutSection from "@/Components/AboutSection";
 import Hero from "@/Components/Hero";
 import ProductSection from "@/Components/ProductSection";
 import ProjectsGallery from "@/Components/ProjectsGallery";
@@ -13,8 +14,9 @@ const page = () => {
       <Hero />
       <ProductSection />
       <WhyChooseUs />
+      <AboutSection />
       <ProjectsGallery />
-      <ContactSection />
+      {/* <ContactSection /> */}
       <WhatsAppFloat />
     </>
   );
