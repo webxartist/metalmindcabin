@@ -35,7 +35,7 @@ const products = [
   },
   {
     title: "Modular Container House",
-    img: "/Modularhouse.png",
+    img: "/modularhouse.png",
     desc: "Luxury modular homes built using containers.",
     material: "Premium Insulated Steel Panels",
     size: "Fully Customizable",
