@@ -50,7 +50,7 @@ const Hero = () => {
         >
           {/* WhatsApp */}
           <a
-            href="https://wa.me/918689970832"
+            href="https://wa.me/919321715392"
             target="_blank"
             className="flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[#F97316] text-white font-semibold hover:bg-[#FB923C] transition"
           >
@@ -59,7 +59,7 @@ const Hero = () => {
 
           {/* Call */}
           <a
-            href="tel:8689970832"
+            href="tel:9321715392"
             className="flex items-center justify-center gap-2 px-6 py-3 rounded-full border border-white text-white hover:bg-white hover:text-black transition"
           >
             <FaPhoneAlt /> Call Now

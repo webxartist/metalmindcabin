@@ -18,7 +18,7 @@ const ContactSection = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const whatsappNumber = "918689970832";
+    const whatsappNumber = "919321715392";
 
     const text = `Hello, 
 Name: ${form.name}
@@ -52,7 +52,7 @@ Requirement: ${form.message}`;
 
           {/* Call Button */}
           <a
-            href="tel:8689970832"
+            href="tel:9321715392"
             className="mt-6 inline-flex items-center gap-2 px-6 py-3 bg-[#F97316] text-white rounded-full font-semibold hover:bg-[#FB923C] transition-all duration-300"
           >
             <FaPhoneAlt /> Call Now

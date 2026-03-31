@@ -53,7 +53,7 @@ const Footer = () => {
           <h3 className="text-lg font-semibold mb-4">Contact</h3>
 
           <p className="flex items-center gap-2 text-[#CBD5F5]">
-            <FaPhoneAlt /> 8689970832
+            <FaPhoneAlt /> 9321715392
           </p>
 
           <p className="flex items-center gap-2 mt-2 text-[#CBD5F5]">
