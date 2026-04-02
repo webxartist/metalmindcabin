@@ -35,7 +35,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo */}
         <Link href="/" className="text-2xl font-bold text-white">
-          <img src="/logoo.png" alt="logo" height={120} width={120} />
+          <img src="/logoo.png" alt="logo" height={100} width={100} />
         </Link>
 
         {/* Desktop */}
