@@ -5,13 +5,13 @@ import { motion } from "framer-motion";
 
 const CallFloat = () => {
   return (
-    <div className="fixed bottom-22 right-6 z-50 flex flex-col items-end gap-3">
+    <div className="fixed bottom-24 right-6 z-50 flex flex-col items-end gap-3">
       {/* Label */}
       <motion.div
         initial={{ opacity: 0, x: 40 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.5 }}
-        className="hidden md:block bg-[#8ca2dc] text-white px-4 py-2 rounded-lg shadow-lg text-sm"
+        className="hidden md:block bg-[#1E3A8A] text-white px-4 py-2 rounded-lg shadow-lg text-sm"
       >
         Call Now
       </motion.div>
@@ -22,7 +22,7 @@ const CallFloat = () => {
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ type: "spring", stiffness: 120 }}
-        className="relative flex items-center justify-center w-14 h-14 rounded-full bg-[#1E3A8A] text-white shadow-xl hover:scale-110 transition"
+        className="relative flex items-center justify-center w-14 h-14 rounded-full bg-[#7793de] text-white shadow-xl hover:scale-110 transition"
       >
         <FaPhoneAlt size={20} />
 
