@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/Components/Navbar";
 import Footer from "@/Components/Footer";
 import WhatsAppFloat from "@/Components/WhatsappFloat";
+import CallFloat from "@/Components/CallFloat";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -65,6 +66,7 @@ export default function RootLayout({ children }) {
         <main className="flex-grow">{children}</main>
         <Footer />
         <WhatsAppFloat />
+        <CallFloat />
       </body>
     </html>
   );

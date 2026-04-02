@@ -10,6 +10,7 @@ const Footer = () => {
         {/* Brand */}
         <div>
           <h2 className="text-2xl font-bold tracking-wide">
+            <img src="/logoo.png" alt="" height={100} width={100} />
             MetalMind<span className="text-gray-400">Cabin</span>
           </h2>
           <p className="mt-4 text-gray-400 text-sm leading-relaxed">
@@ -88,9 +89,9 @@ const Footer = () => {
             <p className="flex items-start gap-2 text-gray-400 text-sm">
               <FaMapMarkerAlt className="mt-1" />
               <span>
-                <b className="text-white">Office:</b> <br />
-                Shop No. 1, Khan Compound, <br />
-                Kausa, Mumbra, Thane - 400612
+                <b className="text-white">Head Office:</b> <br />
+                Plot No.7, Khotari Compound Behind Rahmani Hotel, Near Nahar
+                Amrit Sakti, Khairani Road Sakinaka Mummbai 400 072{" "}
               </span>
             </p>
           </div>
@@ -101,8 +102,8 @@ const Footer = () => {
               <FaMapMarkerAlt className="mt-1" />
               <span>
                 <b className="text-white">Factory:</b> <br />
-                Industrial Area, MIDC, <br />
-                Navi Mumbai, Maharashtra
+                Plot no 51A,gat no.580/1,Autoline Industrial park Limited,
+                jawdewasti, Mahalunge,Tal khed,Chakan,pune-410501.
               </span>
             </p>
           </div>
