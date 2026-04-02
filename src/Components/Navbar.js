@@ -33,7 +33,7 @@ const Navbar = () => {
       }`}
     >
       {/* 🔥 FIX: FIXED HEIGHT */}
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 h-[80px]">
+      <div className="max-w-7xl mx-auto flex items-center justify-between px-2 h-[80px]">
         {/* ✅ LOGO FIXED SIZE */}
         <Link href="/" className="flex items-center">
           <img
