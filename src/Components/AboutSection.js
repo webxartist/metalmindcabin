@@ -30,28 +30,28 @@ const Counter = ({ target }) => {
 
 const AboutSection = () => {
   return (
-    <section className="relative bg-[#0F172A] py-24 px-6 overflow-hidden">
-      {/* Background Glow */}
-      <div className="absolute top-0 left-0 w-72 h-72 bg-[#F97316]/10 blur-3xl rounded-full"></div>
+    <section className="relative bg-[#F5E6D3] py-24 px-6 overflow-hidden">
+      {/* Soft Blue Glow */}
+      <div className="absolute top-0 left-0 w-72 h-72 bg-[#1E3A8A]/10 blur-3xl rounded-full"></div>
 
       <div className="relative max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
         {/* LEFT SIDE */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, ease: "easeInOut" }}
+          transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight">
-            About <span className="text-[#F97316]">MetalMind Cabin</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-[#1E3A8A] leading-tight">
+            About <span className="text-[#1E3A8A]">MetalMind Cabin</span>
           </h2>
 
-          <p className="mt-6 text-[#CBD5F5] text-lg">
+          <p className="mt-6 text-gray-700 text-lg">
             MetalMind Cabin is a trusted manufacturer of portable cabins, office
             containers, and modular solutions designed for modern industrial and
             commercial needs.
           </p>
 
-          <p className="mt-4 text-[#CBD5F5]">
+          <p className="mt-4 text-gray-700">
             We focus on delivering durable, high-quality structures with modern
             design, fast execution, and customer satisfaction.
           </p>
@@ -64,8 +64,8 @@ const AboutSection = () => {
               "Fast delivery & installation",
               "Trusted by multiple industries",
             ].map((item, i) => (
-              <div key={i} className="flex items-center gap-3 text-[#CBD5F5]">
-                <FaCheckCircle className="text-[#F97316]" />
+              <div key={i} className="flex items-center gap-3 text-gray-700">
+                <FaCheckCircle className="text-[#1E3A8A]" />
                 <span>{item}</span>
               </div>
             ))}
@@ -74,31 +74,31 @@ const AboutSection = () => {
           {/* Stats */}
           <div className="mt-10 grid grid-cols-3 gap-6">
             <div>
-              <h3 className="text-3xl font-bold text-[#F97316]">
+              <h3 className="text-3xl font-bold text-[#1E3A8A]">
                 <Counter target={100} />
               </h3>
-              <p className="text-[#CBD5F5] text-sm">Projects</p>
+              <p className="text-gray-600 text-sm">Projects</p>
             </div>
 
             <div>
-              <h3 className="text-3xl font-bold text-[#F97316]">
+              <h3 className="text-3xl font-bold text-[#1E3A8A]">
                 <Counter target={50} />
               </h3>
-              <p className="text-[#CBD5F5] text-sm">Clients</p>
+              <p className="text-gray-600 text-sm">Clients</p>
             </div>
 
             <div>
-              <h3 className="text-3xl font-bold text-[#F97316]">
+              <h3 className="text-3xl font-bold text-[#1E3A8A]">
                 <Counter target={5} />
               </h3>
-              <p className="text-[#CBD5F5] text-sm">Years Experience</p>
+              <p className="text-gray-600 text-sm">Years Experience</p>
             </div>
           </div>
 
           {/* CTA */}
           <a
             href="/contact"
-            className="inline-block mt-10 px-8 py-3 bg-[#F97316] text-white rounded-full font-semibold hover:bg-[#FB923C] transition-all duration-300 hover:scale-105"
+            className="inline-block mt-10 px-8 py-3 bg-[#1E3A8A] text-white rounded-full font-semibold hover:bg-[#172554] transition-all duration-300 hover:scale-105"
           >
             Contact Us
           </a>
@@ -108,7 +108,7 @@ const AboutSection = () => {
         <motion.div
           initial={{ opacity: 0, x: 40 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, ease: "easeInOut" }}
+          transition={{ duration: 0.8 }}
           className="relative"
         >
           {/* Main Image */}
@@ -119,8 +119,8 @@ const AboutSection = () => {
           />
 
           {/* Floating Card */}
-          <div className="absolute bottom-6 left-6 bg-[#1E293B] px-5 py-3 rounded-lg border border-white/10 shadow-lg">
-            <p className="text-white text-sm font-semibold">
+          <div className="absolute bottom-6 left-6 bg-white px-5 py-3 rounded-lg border border-[#1E3A8A]/20 shadow-lg">
+            <p className="text-[#1E3A8A] text-sm font-semibold">
               ✔ 100+ Successful Projects
             </p>
           </div>

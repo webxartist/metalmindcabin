@@ -5,70 +5,113 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#020617] text-white pt-16 pb-8 px-6">
+    <footer className="bg-[#0A0F1C] text-white pt-16 pb-8 px-6 border-t border-white/10">
       <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-10">
         {/* Brand */}
         <div>
-          <h2 className="text-2xl font-bold">
-            MetalMind<span className="text-[#F97316]">Cabin</span>
+          <h2 className="text-2xl font-bold tracking-wide">
+            MetalMind<span className="text-gray-400">Cabin</span>
           </h2>
-          <p className="mt-4 text-[#CBD5F5] text-sm">
-            We provide high-quality portable cabins, containers, and modular
-            solutions for modern businesses.
+          <p className="mt-4 text-gray-400 text-sm leading-relaxed">
+            Premium manufacturer of portable cabins, modular containers, and
+            industrial solutions built for durability, strength, and modern use.
           </p>
         </div>
 
         {/* Links */}
         <div>
-          <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-          <ul className="space-y-2 text-[#CBD5F5]">
-            <li>
-              <Link href="/">Home</Link>
-            </li>
-            <li>
-              <Link href="/about">About</Link>
-            </li>
-            <li>
-              <Link href="/products">Products</Link>
-            </li>
-            <li>
-              <Link href="/contact">Contact</Link>
-            </li>
+          <h3 className="text-lg font-semibold mb-4 text-gray-200">
+            Quick Links
+          </h3>
+          <ul className="space-y-3 text-gray-400 text-sm">
+            {[
+              { name: "Home", link: "/" },
+              { name: "About", link: "/about" },
+              { name: "Products", link: "/products" },
+              { name: "Contact", link: "/contact" },
+            ].map((item, i) => (
+              <li key={i}>
+                <Link
+                  href={item.link}
+                  className="hover:text-white transition duration-300"
+                >
+                  {item.name}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
 
-        {/* Services */}
+        {/* Products */}
         <div>
-          <h3 className="text-lg font-semibold mb-4">Our Products</h3>
-          <ul className="space-y-2 text-[#CBD5F5] text-sm">
-            <li>Portable Cabins</li>
-            <li>Office Containers</li>
-            <li>Security Cabins</li>
-            <li>Toilet Cabins</li>
+          <h3 className="text-lg font-semibold mb-4 text-gray-200">
+            Our Products
+          </h3>
+          <ul className="space-y-3 text-gray-400 text-sm">
+            <li className="hover:text-white transition">
+              Portable Office Cabin
+            </li>
+            <li className="hover:text-white transition">
+              Site Office Container
+            </li>
+            <li className="hover:text-white transition">
+              Security Guard Cabin
+            </li>
+            <li className="hover:text-white transition">
+              Portable Toilet Cabin
+            </li>
+            <li className="hover:text-white transition">
+              Modular Container House
+            </li>
+            <li className="hover:text-white transition">Storage Container</li>
           </ul>
         </div>
 
         {/* Contact */}
         <div>
-          <h3 className="text-lg font-semibold mb-4">Contact</h3>
+          <h3 className="text-lg font-semibold mb-4 text-gray-200">
+            Contact Info
+          </h3>
 
-          <p className="flex items-center gap-2 text-[#CBD5F5]">
-            <FaPhoneAlt /> 9321715392
+          {/* Phone */}
+          <p className="flex items-center gap-2 text-gray-400 text-sm hover:text-white transition">
+            <FaPhoneAlt /> +91 9321715392
           </p>
 
-          <p className="flex items-center gap-2 mt-2 text-[#CBD5F5]">
-            <FaWhatsapp /> WhatsApp Available
+          {/* WhatsApp */}
+          <p className="flex items-center gap-2 mt-3 text-gray-400 text-sm hover:text-white transition">
+            <FaWhatsapp /> WhatsApp Support Available
           </p>
 
-          <p className="flex items-center gap-2 mt-2 text-[#CBD5F5]">
-            <FaMapMarkerAlt /> Mumbai / Navi Mumbai
-          </p>
+          {/* Address 1 */}
+          <div className="mt-5">
+            <p className="flex items-start gap-2 text-gray-400 text-sm">
+              <FaMapMarkerAlt className="mt-1" />
+              <span>
+                <b className="text-white">Office:</b> <br />
+                Shop No. 1, Khan Compound, <br />
+                Kausa, Mumbra, Thane - 400612
+              </span>
+            </p>
+          </div>
+
+          {/* Address 2 */}
+          <div className="mt-4">
+            <p className="flex items-start gap-2 text-gray-400 text-sm">
+              <FaMapMarkerAlt className="mt-1" />
+              <span>
+                <b className="text-white">Factory:</b> <br />
+                Industrial Area, MIDC, <br />
+                Navi Mumbai, Maharashtra
+              </span>
+            </p>
+          </div>
         </div>
       </div>
 
       {/* Bottom */}
-      <div className="border-t border-white/10 mt-10 pt-6 text-center text-[#CBD5F5] text-sm">
-        © {new Date().getFullYear()} MetalMind Cabin. All rights reserved.
+      <div className="border-t border-white/10 mt-12 pt-6 text-center text-gray-500 text-sm">
+        © {new Date().getFullYear()} MetalMind Cabin. All Rights Reserved.
       </div>
     </footer>
   );

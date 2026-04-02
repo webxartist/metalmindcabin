@@ -7,6 +7,7 @@ import ProductSection from "@/Components/ProductSection";
 import TestimonialSlider from "@/Components/Testimonials";
 import WhyChooseUs from "@/Components/WhyChooseUs";
 import ContactSection from "@/Components/ContactSection";
+import ProductAbout from "@/Components/ProductAbout";
 import React from "react";
 
 const page = () => {
@@ -16,6 +17,7 @@ const page = () => {
       <ProductSection />
       <WhyChooseUs />
       <AboutSection />
+      <ProductAbout />
       {/* <ProjectsGallery /> */}
       {/* <ContactSection /> */}
       <TestimonialSlider />

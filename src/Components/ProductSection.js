@@ -71,14 +71,14 @@ Thank you!`;
   };
 
   return (
-    <section className="bg-[#0F172A] py-20 px-6">
+    <section className="bg-[#F5E6D3] py-20 px-6">
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <div className="text-center mb-14">
-          <h2 className="text-3xl md:text-5xl font-bold text-white">
+          <h2 className="text-3xl md:text-5xl font-bold text-[#1E3A8A]">
             Our Premium Cabin Solutions
           </h2>
-          <p className="mt-4 text-[#CBD5F5]">
+          <p className="mt-4 text-gray-700">
             Designed for durability, flexibility, and modern usage.
           </p>
         </div>
@@ -98,7 +98,8 @@ Thank you!`;
                 className="w-full h-64 object-cover group-hover:scale-110 transition duration-500"
               />
 
-              <div className="absolute inset-0 bg-black/60 group-hover:bg-black/70 transition"></div>
+              {/* Blue overlay instead of black */}
+              <div className="absolute inset-0 bg-[#1E3A8A]/60 group-hover:bg-[#1E3A8A]/70 transition"></div>
 
               <div className="absolute inset-0 flex items-end p-5">
                 <h3 className="text-xl font-semibold text-white">
@@ -111,12 +112,12 @@ Thank you!`;
 
         {/* MODAL */}
         {selected && (
-          <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4">
-            <div className="bg-[#111827] text-white rounded-2xl max-w-lg w-full p-6 relative">
+          <div className="fixed inset-0 bg-[#1E3A8A]/80 flex items-center justify-center z-50 p-4">
+            <div className="bg-white text-[#1E3A8A] rounded-2xl max-w-lg w-full p-6 relative shadow-xl">
               {/* Close */}
               <button
                 onClick={() => setSelected(null)}
-                className="absolute top-3 right-4 text-gray-400 hover:text-white text-xl"
+                className="absolute top-3 right-4 text-gray-500 hover:text-[#1E3A8A] text-xl"
               >
                 ✕
               </button>
@@ -130,9 +131,9 @@ Thank you!`;
               {/* Content */}
               <h3 className="text-2xl font-bold mb-2">{selected.title}</h3>
 
-              <p className="text-gray-300 mb-4">{selected.desc}</p>
+              <p className="text-gray-600 mb-4">{selected.desc}</p>
 
-              <div className="text-sm text-gray-400 space-y-1 mb-5">
+              <div className="text-sm text-gray-700 space-y-1 mb-5">
                 <p>
                   <b>Material:</b> {selected.material}
                 </p>
@@ -145,7 +146,7 @@ Thank you!`;
               <a
                 href={generateWhatsAppLink(selected)}
                 target="_blank"
-                className="w-full flex justify-center items-center gap-2 bg-[#F97316] hover:bg-[#FB923C] py-3 rounded-lg font-semibold transition"
+                className="w-full flex justify-center items-center gap-2 bg-[#1E3A8A] hover:bg-[#172554] text-white py-3 rounded-lg font-semibold transition"
               >
                 <FaWhatsapp /> Get Quotation on WhatsApp
               </a>

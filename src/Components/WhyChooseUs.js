@@ -28,14 +28,14 @@ const features = [
 
 const WhyChooseUs = () => {
   return (
-    <section className="bg-[#0F172A] py-20 px-6">
+    <section className="bg-[#F5E6D3] py-20 px-6">
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <div className="text-center mb-14">
-          <h2 className="text-3xl md:text-5xl font-bold text-white">
+          <h2 className="text-3xl md:text-5xl font-bold text-[#1E3A8A]">
             Why Choose Us
           </h2>
-          <p className="mt-4 text-[#CBD5F5]">
+          <p className="mt-4 text-gray-700">
             We deliver quality, speed, and trust for every project.
           </p>
         </div>
@@ -45,20 +45,22 @@ const WhyChooseUs = () => {
           {features.map((item, i) => (
             <motion.div
               key={i}
-              whileHover={{ scale: 1.05 }}
+              whileHover={{ scale: 1.05, y: -5 }}
               transition={{ type: "spring", stiffness: 120 }}
-              className="bg-[#1E293B] p-6 rounded-xl text-center border border-white/10 hover:border-[#F97316] transition-all duration-300"
+              className="bg-white p-6 rounded-xl text-center border border-[#1E3A8A]/10 shadow-md hover:shadow-xl hover:border-[#1E3A8A]/40 transition-all duration-300"
             >
               {/* Icon */}
-              <div className="text-4xl text-[#F97316] mb-4 flex justify-center">
+              <div className="text-4xl text-[#1E3A8A] mb-4 flex justify-center">
                 {item.icon}
               </div>
 
               {/* Title */}
-              <h3 className="text-xl font-semibold text-white">{item.title}</h3>
+              <h3 className="text-xl font-semibold text-[#1E3A8A]">
+                {item.title}
+              </h3>
 
               {/* Desc */}
-              <p className="mt-3 text-[#CBD5F5] text-sm">{item.desc}</p>
+              <p className="mt-3 text-gray-600 text-sm">{item.desc}</p>
             </motion.div>
           ))}
         </div>

@@ -30,32 +30,37 @@ const testimonials = [
 
 export default function TestimonialSlider() {
   return (
-    <section className="bg-black py-16 overflow-hidden">
+    <section className="bg-[#F5E6D3] py-16 overflow-hidden">
+      {/* Heading */}
       <div className="text-center mb-10">
-        <h2 className="text-4xl font-bold text-[#F97316]">
+        <h2 className="text-4xl font-bold text-[#1E3A8A]">
           Trusted by Clients Across India
         </h2>
-        <p className="text-gray-400 mt-2">Real experiences. Real results.</p>
+        <p className="text-gray-600 mt-2">Real experiences. Real results.</p>
       </div>
 
+      {/* Slider */}
       <div className="overflow-hidden">
         <div className="flex gap-6 animate-marquee w-max">
           {[...testimonials, ...testimonials].map((item, index) => (
             <div
               key={index}
-              className="min-w-[280px] bg-white/5 border border-white/10 rounded-2xl p-5 backdrop-blur-lg hover:scale-105 transition"
+              className="min-w-[280px] bg-white border border-[#1E3A8A]/10 rounded-2xl p-5 shadow-md hover:shadow-xl hover:-translate-y-1 transition"
             >
-              <p className="text-gray-300 text-sm mb-4">“{item.review}”</p>
+              {/* Review */}
+              <p className="text-gray-700 text-sm mb-4">“{item.review}”</p>
 
+              {/* User */}
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-[#F97316] rounded-full flex items-center justify-center text-black font-bold">
+                <div className="w-10 h-10 bg-[#1E3A8A] text-white rounded-full flex items-center justify-center font-bold">
                   {item.name[0]}
                 </div>
+
                 <div>
-                  <h4 className="text-white text-sm font-semibold">
+                  <h4 className="text-[#1E3A8A] text-sm font-semibold">
                     {item.name}
                   </h4>
-                  <p className="text-xs text-gray-400">{item.role}</p>
+                  <p className="text-xs text-gray-500">{item.role}</p>
                 </div>
               </div>
             </div>

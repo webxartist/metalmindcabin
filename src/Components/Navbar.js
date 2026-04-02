@@ -12,6 +12,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 40);
     window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const navLinks = [
@@ -27,14 +28,14 @@ const Navbar = () => {
       animate={{ y: 0 }}
       className={`fixed w-full z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-[#0F172A]/95 backdrop-blur-md border-b border-white/10 shadow-lg"
+          ? "bg-[#1E3A8A]/90 backdrop-blur-md shadow-lg"
           : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo */}
         <Link href="/" className="text-2xl font-bold text-white">
-          <img src="/metalmind.png" alt="" height={100} width={100} />
+          <img src="/logoo.png" alt="logo" height={120} width={120} />
         </Link>
 
         {/* Desktop */}
@@ -43,7 +44,7 @@ const Navbar = () => {
             <Link
               key={i}
               href={link.href}
-              className="text-[#CBD5F5] hover:text-[#F97316] transition"
+              className="text-white/80 hover:text-white transition font-medium"
             >
               {link.name}
             </Link>
@@ -52,13 +53,13 @@ const Navbar = () => {
           {/* CTA */}
           <Link
             href="/contact"
-            className="px-5 py-2 rounded-full bg-[#F97316] text-white font-semibold hover:bg-[#FB923C] transition"
+            className="px-6 py-2 rounded-full bg-white text-[#1E3A8A] font-semibold hover:bg-gray-200 transition"
           >
             Get Quote
           </Link>
         </nav>
 
-        {/* Mobile */}
+        {/* Mobile Icon */}
         <div className="md:hidden text-white">
           <button onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <X size={28} /> : <Menu size={28} />}
@@ -66,18 +67,18 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile */}
+      {/* Mobile Menu */}
       {isOpen && (
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="md:hidden bg-[#0F172A] px-6 pb-6"
+          className="md:hidden bg-[#1E3A8A] px-6 pb-6"
         >
           {navLinks.map((link, i) => (
             <Link
               key={i}
               href={link.href}
-              className="block py-3 text-[#CBD5F5] border-b border-white/10 hover:text-[#F97316]"
+              className="block py-3 text-white border-b border-white/20 hover:text-gray-200"
               onClick={() => setIsOpen(false)}
             >
               {link.name}
@@ -86,7 +87,7 @@ const Navbar = () => {
 
           <Link
             href="/contact"
-            className="block mt-4 bg-[#F97316] text-white text-center py-3 rounded-full font-semibold"
+            className="block mt-4 bg-white text-[#1E3A8A] text-center py-3 rounded-full font-semibold hover:bg-gray-200"
           >
             Get Quote
           </Link>

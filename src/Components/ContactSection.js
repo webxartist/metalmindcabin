@@ -20,7 +20,7 @@ const ContactSection = () => {
 
     const whatsappNumber = "919321715392";
 
-    const text = `Hello, 
+    const text = `Hello,
 Name: ${form.name}
 Phone: ${form.phone}
 Requirement: ${form.message}`;
@@ -33,7 +33,7 @@ Requirement: ${form.message}`;
   };
 
   return (
-    <section className="bg-[#0F172A] py-20 px-6">
+    <section className="bg-[#F5E6D3] py-20 px-6">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         {/* Left Content */}
         <motion.div
@@ -41,11 +41,11 @@ Requirement: ${form.message}`;
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
         >
-          <h2 className="text-3xl md:text-5xl font-bold text-white">
+          <h2 className="text-3xl md:text-5xl font-bold text-[#1E3A8A]">
             Get Your Cabin Today
           </h2>
 
-          <p className="mt-4 text-[#CBD5F5]">
+          <p className="mt-4 text-gray-700">
             Contact us for high-quality portable cabins, containers, and custom
             solutions.
           </p>
@@ -53,7 +53,7 @@ Requirement: ${form.message}`;
           {/* Call Button */}
           <a
             href="tel:9321715392"
-            className="mt-6 inline-flex items-center gap-2 px-6 py-3 bg-[#F97316] text-white rounded-full font-semibold hover:bg-[#FB923C] transition-all duration-300"
+            className="mt-6 inline-flex items-center gap-2 px-6 py-3 bg-[#1E3A8A] text-white rounded-full font-semibold hover:bg-[#172554] transition-all duration-300"
           >
             <FaPhoneAlt /> Call Now
           </a>
@@ -65,9 +65,9 @@ Requirement: ${form.message}`;
           initial={{ opacity: 0, x: 40 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
-          className="bg-[#1E293B] p-8 rounded-xl shadow-lg border border-white/10"
+          className="bg-white p-8 rounded-xl shadow-xl border border-[#1E3A8A]/10"
         >
-          <h3 className="text-2xl font-semibold text-white mb-6">
+          <h3 className="text-2xl font-semibold text-[#1E3A8A] mb-6">
             Send Inquiry
           </h3>
 
@@ -78,7 +78,7 @@ Requirement: ${form.message}`;
             placeholder="Your Name"
             required
             onChange={handleChange}
-            className="w-full mb-4 px-4 py-3 rounded-lg bg-[#0F172A] text-white border border-gray-700 focus:outline-none focus:border-[#F97316]"
+            className="w-full mb-4 px-4 py-3 rounded-lg bg-[#F9FAFB] text-[#1E3A8A] border border-gray-300 focus:outline-none focus:border-[#1E3A8A]"
           />
 
           {/* Phone */}
@@ -88,7 +88,7 @@ Requirement: ${form.message}`;
             placeholder="Phone Number"
             required
             onChange={handleChange}
-            className="w-full mb-4 px-4 py-3 rounded-lg bg-[#0F172A] text-white border border-gray-700 focus:outline-none focus:border-[#F97316]"
+            className="w-full mb-4 px-4 py-3 rounded-lg bg-[#F9FAFB] text-[#1E3A8A] border border-gray-300 focus:outline-none focus:border-[#1E3A8A]"
           />
 
           {/* Message */}
@@ -97,13 +97,13 @@ Requirement: ${form.message}`;
             placeholder="Your Requirement"
             rows="4"
             onChange={handleChange}
-            className="w-full mb-4 px-4 py-3 rounded-lg bg-[#0F172A] text-white border border-gray-700 focus:outline-none focus:border-[#F97316]"
+            className="w-full mb-4 px-4 py-3 rounded-lg bg-[#F9FAFB] text-[#1E3A8A] border border-gray-300 focus:outline-none focus:border-[#1E3A8A]"
           ></textarea>
 
           {/* Submit */}
           <button
             type="submit"
-            className="w-full py-3 bg-[#F97316] text-white font-semibold rounded-lg hover:bg-[#FB923C] transition-all duration-300 flex items-center justify-center gap-2"
+            className="w-full py-3 bg-[#1E3A8A] text-white font-semibold rounded-lg hover:bg-[#172554] transition-all duration-300 flex items-center justify-center gap-2"
           >
             <FaWhatsapp /> Send on WhatsApp
           </button>
