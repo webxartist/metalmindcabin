@@ -11,7 +11,7 @@ const CallFloat = () => {
         initial={{ opacity: 0, x: 40 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.5 }}
-        className="hidden md:block bg-[#1E3A8A] text-white px-4 py-2 rounded-lg shadow-lg text-sm"
+        className="hidden md:block bg-[#8ca2dc] text-white px-4 py-2 rounded-lg shadow-lg text-sm"
       >
         Call Now
       </motion.div>
