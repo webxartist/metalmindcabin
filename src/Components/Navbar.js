@@ -26,16 +26,21 @@ const Navbar = () => {
     <motion.header
       initial={{ y: -80 }}
       animate={{ y: 0 }}
-      className={`fixed w-full z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         scrolled
           ? "bg-[#1E3A8A]/90 backdrop-blur-md shadow-lg"
           : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-        {/* Logo */}
-        <Link href="/" className="text-2xl font-bold text-white">
-          <img src="/logoo.png" alt="logo" height={100} width={100} />
+      {/* 🔥 FIX: FIXED HEIGHT */}
+      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 h-[80px]">
+        {/* ✅ LOGO FIXED SIZE */}
+        <Link href="/" className="flex items-center">
+          <img
+            src="/logoo.png"
+            alt="logo"
+            className="h-14 md:h-16 w-auto object-contain"
+          />
         </Link>
 
         {/* Desktop */}
@@ -59,10 +64,10 @@ const Navbar = () => {
           </Link>
         </nav>
 
-        {/* Mobile Icon */}
-        <div className="md:hidden text-white">
+        {/* ✅ MOBILE ICON CENTERED */}
+        <div className="md:hidden flex items-center text-white">
           <button onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? <X size={28} /> : <Menu size={28} />}
+            {isOpen ? <X size={30} /> : <Menu size={30} />}
           </button>
         </div>
       </div>
