@@ -33,15 +33,17 @@ Requirement: ${form.message}`;
   };
 
   return (
-    <section className="bg-[#F5E6D3] py-20 px-6">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
-        {/* Left Content */}
+    <section className="bg-[#F5E6D3] py-20 overflow-x-hidden">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-10 items-center">
+        {/* LEFT */}
         <motion.div
-          initial={{ opacity: 0, x: -40 }}
+          initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="w-full"
         >
-          <h2 className="text-3xl md:text-5xl font-bold text-[#1E3A8A]">
+          <h2 className="text-3xl md:text-5xl font-bold text-[#1E3A8A] leading-tight">
             Get Your Cabin Today
           </h2>
 
@@ -50,7 +52,6 @@ Requirement: ${form.message}`;
             solutions.
           </p>
 
-          {/* Call Button */}
           <a
             href="tel:9321715392"
             className="mt-6 inline-flex items-center gap-2 px-6 py-3 bg-[#1E3A8A] text-white rounded-full font-semibold hover:bg-[#172554] transition-all duration-300"
@@ -59,19 +60,19 @@ Requirement: ${form.message}`;
           </a>
         </motion.div>
 
-        {/* Form */}
+        {/* RIGHT FORM */}
         <motion.form
           onSubmit={handleSubmit}
-          initial={{ opacity: 0, x: 40 }}
+          initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.7 }}
-          className="bg-white p-8 rounded-xl shadow-xl border border-[#1E3A8A]/10"
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="bg-white p-6 sm:p-8 rounded-xl shadow-xl border border-[#1E3A8A]/10 w-full"
         >
           <h3 className="text-2xl font-semibold text-[#1E3A8A] mb-6">
             Send Inquiry
           </h3>
 
-          {/* Name */}
           <input
             type="text"
             name="name"
@@ -81,7 +82,6 @@ Requirement: ${form.message}`;
             className="w-full mb-4 px-4 py-3 rounded-lg bg-[#F9FAFB] text-[#1E3A8A] border border-gray-300 focus:outline-none focus:border-[#1E3A8A]"
           />
 
-          {/* Phone */}
           <input
             type="tel"
             name="phone"
@@ -91,7 +91,6 @@ Requirement: ${form.message}`;
             className="w-full mb-4 px-4 py-3 rounded-lg bg-[#F9FAFB] text-[#1E3A8A] border border-gray-300 focus:outline-none focus:border-[#1E3A8A]"
           />
 
-          {/* Message */}
           <textarea
             name="message"
             placeholder="Your Requirement"
@@ -100,7 +99,6 @@ Requirement: ${form.message}`;
             className="w-full mb-4 px-4 py-3 rounded-lg bg-[#F9FAFB] text-[#1E3A8A] border border-gray-300 focus:outline-none focus:border-[#1E3A8A]"
           ></textarea>
 
-          {/* Submit */}
           <button
             type="submit"
             className="w-full py-3 bg-[#1E3A8A] text-white font-semibold rounded-lg hover:bg-[#172554] transition-all duration-300 flex items-center justify-center gap-2"

@@ -33,13 +33,12 @@ const Navbar = () => {
       }`}
     >
       {/* 🔥 FIX: FIXED HEIGHT */}
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-2 h-[80px]">
-        {/* ✅ LOGO FIXED SIZE */}
+      <div className="w-full flex items-center justify-between px-4 md:px-10 h-[80px]">
         <Link href="/" className="flex items-center">
           <img
             src="/logoo.png"
             alt="logo"
-            className="h-28 md:h-20 w-auto object-contain"
+            className="h-24 md:h-20 w-auto object-contain"
           />
         </Link>
 

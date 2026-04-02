@@ -3,6 +3,7 @@ body {
   background-color: #0f172a;
   scroll-behavior: smooth;
   transition: all 0.3s ease-in-out;
+  overflow: auto;
 }
 
 @keyframes pulse {
