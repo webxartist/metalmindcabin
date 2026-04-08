@@ -1,9 +1,9 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-// import Navbar from "@/Components/Navbar";
-// import Footer from "@/Components/Footer";
-// import WhatsAppFloat from "@/Components/WhatsappFloat";
-// import CallFloat from "@/Components/CallFloat";
+import Navbar from "@/Components/Navbar";
+import Footer from "@/Components/Footer";
+import WhatsAppFloat from "@/Components/WhatsappFloat";
+import CallFloat from "@/Components/CallFloat";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: {
     default:
-      "MetalMindCabin | Portable Cabins & Container Solutions in Mumbra, Thane",
+      "MetalMindCabin | Portable Cabins & Container Solutions in Thane, Navi Mumbai",
     template: "%s | MetalMindCabin",
   },
 
@@ -41,9 +41,9 @@ export const metadata = {
   creator: "MetalMindCabin",
 
   openGraph: {
-    title: "MetalMindCabin - Premium Portable Cabins in Mumbra, Thane",
+    title: "MetalMindCabin - Premium Portable Cabins in Thane, Navi Mumbai.",
     description:
-      "Get durable and modern portable cabins, office containers, and modular homes in Mumbra, Thane. Contact MetalMindCabin today.",
+      "Get durable and modern portable cabins, office containers, and modular homes in Thane, Navi Mumbai. Contact MetalMindCabin today.",
     url: "https://yourdomain.com", // 👉 change this
     siteName: "MetalMindCabin",
     locale: "en_IN",
@@ -62,11 +62,11 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-black text-white">
-        {/* <Navbar /> */}
+        <Navbar />
         <main className="flex-grow">{children}</main>
-        {/* <Footer />
+        <Footer />
         <WhatsAppFloat />
-        <CallFloat /> */}
+        <CallFloat />
       </body>
     </html>
   );
