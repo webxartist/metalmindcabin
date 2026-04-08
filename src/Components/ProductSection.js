@@ -99,7 +99,7 @@ Thank you!`;
               />
 
               {/* Blue overlay instead of black */}
-              <div className="absolute inset-0 bg-[#1E3A8A]/60 group-hover:bg-[#1E3A8A]/70 transition"></div>
+              <div className="absolute inset-0  group-hover:bg-[#1E3A8A]/70 transition"></div>
 
               <div className="absolute inset-0 flex items-end p-5">
                 <h3 className="text-xl font-semibold text-white">
