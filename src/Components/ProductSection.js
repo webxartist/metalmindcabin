@@ -12,13 +12,7 @@ const products = [
     material: "MS Steel Structure, Insulated Panels",
     size: "10x20 ft (Customizable)",
   },
-  {
-    title: "Site Office Container",
-    img: "/site.png",
-    desc: "Ideal for site management with modern office setup.",
-    material: "Heavy Duty Steel + Glass + Interior Finish",
-    size: "Custom Sizes Available",
-  },
+
   {
     title: "Security Guard Cabin",
     img: "/security.png",
@@ -46,6 +40,34 @@ const products = [
     desc: "Secure storage solution for materials & goods.",
     material: "Heavy Duty Cargo Steel",
     size: "20ft / 40ft",
+  },
+  {
+    title: "Container Inside",
+    img: "/pin1.jpeg",
+    desc: "Ideal for site management with modern office setup.",
+    material: "Heavy Duty Steel + Glass + Interior Finish",
+    size: "Custom Sizes Available",
+  },
+  {
+    title: "Container Inside",
+    img: "/pin2.jpeg",
+    desc: "Ideal for site management with modern office setup.",
+    material: "Heavy Duty Steel + Glass + Interior Finish",
+    size: "Custom Sizes Available",
+  },
+  {
+    title: "Container Inside",
+    img: "/pin3.jpeg",
+    desc: "Ideal for site management with modern office setup.",
+    material: "Heavy Duty Steel + Glass + Interior Finish",
+    size: "Custom Sizes Available",
+  },
+  {
+    title: " Container Inside",
+    img: "/pin4.jpeg",
+    desc: "Ideal for site management with modern office setup.",
+    material: "Heavy Duty Steel + Glass + Interior Finish",
+    size: "Custom Sizes Available",
   },
 ];
 

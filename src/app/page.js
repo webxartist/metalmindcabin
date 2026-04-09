@@ -9,6 +9,7 @@ import WhyChooseUs from "@/Components/WhyChooseUs";
 import ContactSection from "@/Components/ContactSection";
 import ProductAbout from "@/Components/ProductAbout";
 import React from "react";
+import GSTBanner from "@/Components/GSTBanner";
 
 const page = () => {
   return (
@@ -17,6 +18,7 @@ const page = () => {
       <ProductSection />
       <WhyChooseUs />
       <AboutSection />
+      <GSTBanner />
       <ProductAbout />
       {/* <ProjectsGallery /> */}
       {/* <ContactSection /> */}

@@ -26,10 +26,9 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="text-4xl md:text-6xl font-bold text-white leading-tight"
         >
-          Premium Portable Cabins <br />
-          <span className="text-[#F5E6D3]">
-            Built for Strength & Durability
-          </span>
+          Manufacturer of
+          <br />
+          <span className="text-[#F5E6D3]">Customise Portable Cabins</span>
         </motion.h1>
 
         {/* Subheading */}

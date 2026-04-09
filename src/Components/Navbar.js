@@ -32,13 +32,14 @@ const Navbar = () => {
           : "bg-transparent"
       }`}
     >
-      {/* 🔥 FIX: FIXED HEIGHT */}
-      <div className="w-full flex items-center justify-between px-4 md:px-10 h-[80px]">
+      {/* 🔥 INCREASE HEIGHT */}
+      <div className="w-full flex items-center justify-between px-4 md:px-10 h-[100px] md:h-[110px]">
+        {/* ✅ BIG RESPONSIVE LOGO */}
         <Link href="/" className="flex items-center">
           <img
             src="/logoo.png"
             alt="logo"
-            className="h-24 md:h-20 w-auto object-contain"
+            className="h-20 sm:h-24 md:h-28 lg:h-32 w-auto object-contain"
           />
         </Link>
 
@@ -63,7 +64,7 @@ const Navbar = () => {
           </Link>
         </nav>
 
-        {/* ✅ MOBILE ICON CENTERED */}
+        {/* Mobile */}
         <div className="md:hidden flex items-center text-white">
           <button onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <X size={30} /> : <Menu size={30} />}
