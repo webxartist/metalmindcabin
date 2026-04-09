@@ -39,7 +39,7 @@ const Navbar = () => {
           <img
             src="/logoo.png"
             alt="logo"
-            className="h-20 sm:h-24 md:h-28 lg:h-32 w-auto object-contain"
+            className="h-28 sm:h-28 md:h-28 lg:h-32 w-auto object-contain"
           />
         </Link>
 
