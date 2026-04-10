@@ -98,7 +98,7 @@ Thank you!`;
         {/* Heading */}
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-5xl font-bold text-[#1E3A8A]">
-            Our Premium Cabin Solutions
+            Our Cabin Solutions
           </h2>
           <p className="mt-4 text-gray-700">
             Designed for durability, flexibility, and modern usage.

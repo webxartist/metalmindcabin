@@ -10,6 +10,7 @@ import ContactSection from "@/Components/ContactSection";
 import ProductAbout from "@/Components/ProductAbout";
 import React from "react";
 import GSTBanner from "@/Components/GSTBanner";
+// import QuatationMaker from "../Components/QuatationMaker";
 
 const page = () => {
   return (
@@ -24,6 +25,7 @@ const page = () => {
       {/* <ContactSection /> */}
       <TestimonialSlider />
       <ContactSection />
+      {/* <QuatationMaker /> */}
     </>
   );
 };
