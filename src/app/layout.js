@@ -23,7 +23,7 @@ export const metadata = {
   },
 
   description:
-    "MetalMindCabin offers premium portable office cabins, security cabins, toilet cabins, storage containers, and modular container houses in Mumbra, Thane & across Mumbai. Strong, durable aur modern cabin solutions ke liye contact kare.",
+    "MetalMindCabin offers  portable office cabins, security cabins, toilet cabins, storage containers, and modular container houses in Mumbra, Thane & across Mumbai. Strong, durable aur modern cabin solutions ke liye contact kare.",
 
   keywords: [
     "Portable Cabin Mumbra",
