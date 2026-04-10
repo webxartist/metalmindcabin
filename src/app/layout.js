@@ -41,7 +41,8 @@ export const metadata = {
   creator: "MetalMindCabin",
 
   openGraph: {
-    title: "MetalMindCabin - Premium Portable Cabins in Thane, Navi Mumbai.",
+    title:
+      "MetalMindCabin - Manufacturer of Customise Portable Cabins in Thane, Navi Mumbai.",
     description:
       "Get durable and modern portable cabins, office containers, and modular homes in Thane, Navi Mumbai. Contact MetalMindCabin today.",
     url: "https://yourdomain.com", // 👉 change this
