@@ -102,8 +102,8 @@ const Footer = () => {
               <FaMapMarkerAlt className="mt-1" />
               <span>
                 <b className="text-white">Factory:</b> <br />
-                Plot no 51/A,Autoline Industrial park Private Limited, Near Pune
-                polymers, Mahalunge,Talegoan-Chakan Road,pune-410501.
+                Plot no 51/A, Autoline Industrial park Private Limited, Near
+                Pune polymers, Mahalunge,Talegoan-Chakan Road,pune-410501.
               </span>
             </p>
           </div>
