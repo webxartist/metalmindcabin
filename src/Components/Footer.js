@@ -90,7 +90,7 @@ const Footer = () => {
               <FaMapMarkerAlt className="mt-1" />
               <span>
                 <b className="text-white">Head Office:</b> <br />
-                Plot No.7, Khotari Compound , Near Nahar Amrit Sakti, Behind
+                Plot No.7, Khotari Compound, Near Nahar Amrit Sakti, Behind
                 Rahmani Hotel, Khairani Road Sakinaka Mumbai 400 072{" "}
               </span>
             </p>
@@ -103,7 +103,7 @@ const Footer = () => {
               <span>
                 <b className="text-white">Factory:</b> <br />
                 Plot no 51/A, Autoline Industrial park Private Limited, Near
-                Pune polymers, Mahalunge,Talegoan-Chakan Road,pune-410501.
+                Pune polymers, Mahalunge, Talegoan-Chakan Road, pune-410501.
               </span>
             </p>
           </div>
