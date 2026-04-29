@@ -90,7 +90,7 @@ const Footer = () => {
               <FaMapMarkerAlt className="mt-1" />
               <span>
                 <b className="text-white">Head Office:</b> <br />
-                Plot No.7, Khotari Compound , Near Nahar Amrit Sakti,Behind
+                Plot No.7, Khotari Compound , Near Nahar Amrit Sakti, Behind
                 Rahmani Hotel, Khairani Road Sakinaka Mumbai 400 072{" "}
               </span>
             </p>
