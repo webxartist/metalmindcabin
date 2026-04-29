@@ -103,7 +103,7 @@ const Footer = () => {
               <span>
                 <b className="text-white">Factory:</b> <br />
                 Plot no 51/A, Autoline Industrial park Private Limited, Near
-                Pune polymers, Mahalunge, Talegoan-Chakan Road, pune-410501.
+                Pune polymers, Mahalunge, Talegaon-Chakan Road, Pune-410501.
               </span>
             </p>
           </div>
