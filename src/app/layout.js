@@ -1,9 +1,9 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-// import Navbar from "@/Components/Navbar";
-// import Footer from "@/Components/Footer";
-// import WhatsAppFloat from "@/Components/WhatsappFloat";
-// import CallFloat from "@/Components/CallFloat";
+import Navbar from "@/Components/Navbar";
+import Footer from "@/Components/Footer";
+import WhatsAppFloat from "@/Components/WhatsappFloat";
+import CallFloat from "@/Components/CallFloat";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -63,11 +63,11 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-black text-white">
-        {/* <Navbar /> */}
+        <Navbar />
         <main className="flex-grow">{children}</main>
-        {/* <Footer />
+        <Footer />
         <WhatsAppFloat />
-        <CallFloat /> */}
+        <CallFloat />
       </body>
     </html>
   );
